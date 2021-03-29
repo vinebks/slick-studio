@@ -7,7 +7,7 @@ export const LogoContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 1.5rem;
+    padding: 0 1.5rem;
 
     border-right: 1px solid ${theme.colors.grey};
     border-left: 1px solid ${theme.colors.grey};
