@@ -6,6 +6,10 @@ export const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-around;
 
+  line-height: 5rem;
+
+  border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
+
   ul {
     display: flex;
     align-items: center;
@@ -16,6 +20,23 @@ export const NavbarContainer = styled.nav`
 
     li {
       transition: color 0.2s;
+      position: relative;
+
+      &.active {
+        color: ${({ theme }) => theme.colors.blue};
+      }
+
+      &.active::after {
+        content: '';
+        height: 3px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: ${({ theme }) => theme.colors.blue};
+      }
+
       &:hover {
         cursor: pointer;
         color: ${({ theme }) => theme.colors.blue};

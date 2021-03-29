@@ -4,7 +4,7 @@ export const Navbar: React.FC = () => {
   return (
     <NavbarContainer>
       <ul>
-        <li>Dashboard</li>
+        <li className="active">Dashboard</li>
         <li>Analytics</li>
         <li>Reports</li>
         <li>Settings</li>
