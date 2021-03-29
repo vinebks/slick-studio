@@ -75,9 +75,9 @@ export const Records = styled.div`
     align-items: center;
     justify-content: center;
     background: ${({ theme }) => theme.colors.darkGrey};
-    border-radius: 20px;
+    border-radius: 50%;
     width: 3rem;
-    height: 2rem;
+    height: 3rem;
   }
 `;
 
