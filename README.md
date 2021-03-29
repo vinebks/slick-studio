@@ -1,6 +1,29 @@
-# TypeScript & Styled Components Next.js example
+<h1 align="center">Slick Studio</h1>
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/w1redl4in/dt-money" />
+  <img alt="Github last commit" src="https://img.shields.io/github/last-commit/w1redl4in/dt-money" />
+</p>
+
+<h2 align="center">This is a redesign of a <a href="https://dribbble.com/shots/15374609-Admin-Panel-UI">Dribbble's artist</a> </h2>
+
+![App Screenshot](https://cdn.discordapp.com/attachments/263762535763673089/826241488996270130/8I6PkEb0gjiAAAAAElFTkSuQmCC.png)
+
+## :rocket: Technologies
+
+- [ReactJS](https://reactjs.org/)
+- [styled-components](https://styled-components.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CRA as Boilerplate](https://create-react-app.dev/)
+- [MirageJS](https://miragejs.com/)
+- [polished](https://polished.js.org/)
+- [react-modal](https://github.com/reactjs/react-modal)
+- [axios](https://github.com/axios/axios)
+- [react-loading-skeleton](https://www.npmjs.com/package/react-loading-skeleton)
+
+---
+
+Made with ♥ by Felipe Austríaco :wave: [Get in touch!](https://felipeaustriaco.dev/)
 
 ## Deploy your own
 
