@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.section`
-  max-width: 60rem;
+  max-width: 100vw;
+
+  @media (max-width: 1600px) {
+    max-width: 75vw;
+  }
+
+  @media (max-width: 1400px) {
+    max-width: 65vw;
+  }
 
   > section {
     max-width: 60rem;
@@ -9,14 +17,16 @@ export const MainContainer = styled.section`
 
     margin: 0 20rem;
 
+    @media (max-width: 1400px) {
+      margin: 0 5rem;
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   > table {
-    max-width: 100%;
-
     width: 100%;
 
     border: 0;
@@ -24,6 +34,8 @@ export const MainContainer = styled.section`
     padding-top: 3rem;
 
     text-align: center;
+
+    overflow: scroll;
 
     th {
       padding: 1rem 2rem;
