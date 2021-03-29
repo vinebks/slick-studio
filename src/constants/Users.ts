@@ -1,6 +1,6 @@
 export const USERS = [
   {
-    name: 'Felipe',
+    name: 'Teste',
     source: 'Dispatch',
     timeStamp: Date.now(),
     errorFlag: 0,
