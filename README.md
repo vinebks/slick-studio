@@ -5,9 +5,15 @@
   <img alt="Github last commit" src="https://img.shields.io/github/last-commit/w1redl4in/dt-money" />
 </p>
 
-<h2 align="center">This is a redesign of a <a href="https://dribbble.com/shots/15374609-Admin-Panel-UI">Dribbble's artist</a> </h2>
+<h2 align="center">This is a redesign of a <a href="https://dribbble.com/shots/15374609-Admin-Panel-UI">Dribbble's project</a></h2>
 
 ![App Screenshot](https://cdn.discordapp.com/attachments/263762535763673089/826241488996270130/8I6PkEb0gjiAAAAAElFTkSuQmCC.png)
+
+<p align="center">
+  <a href="https://slick-studio-4fmbfszjc-w1redl4in.vercel.app/" target="_blank">
+    <img alt="vercel next" src="https://res.cloudinary.com/practicaldev/image/fetch/s--DWovAEyS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/lr4rm1p2pcezmxqs5dqk.png">
+  </a>
+</p>
 
 ## :rocket: Technologies
 
