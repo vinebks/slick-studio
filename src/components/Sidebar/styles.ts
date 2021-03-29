@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const SidebarContainer = styled.section`
   grid-area: Sidebar;
+  border-right: 1px solid ${({ theme }) => theme.colors.grey};
 
   nav {
     height: 40rem;
@@ -11,8 +12,6 @@ export const SidebarContainer = styled.section`
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-
-    border-right: 1px solid ${({ theme }) => theme.colors.grey};
 
     @media (max-width: 1440px) {
       height: 29rem;
