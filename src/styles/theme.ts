@@ -5,6 +5,7 @@ export const theme = {
     white: '#E7E4D9',
     green: '#18A14F',
     grey: '#42404D',
+    lightGrey: '#686671',
   },
   fontSize: {
     large: '16px',
