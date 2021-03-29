@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.section`
+  max-width: 60rem;
+
   > section {
     max-width: 60rem;
     padding-top: 4rem;
@@ -13,17 +15,15 @@ export const MainContainer = styled.section`
   }
 
   > table {
+    max-width: 100%;
+
     width: 100%;
 
     border: 0;
 
     padding-top: 3rem;
 
-    /* border-spacing: 0 0.5rem; */
-
     text-align: center;
-
-    margin: 0;
 
     th {
       padding: 1rem 2rem;
@@ -74,13 +74,14 @@ export const RawInfo = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  max-width: 25rem;
+  max-width: 30rem;
   width: 100%;
 
   span {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-thickness: 2px;
+    padding: 0 2rem;
 
     &:hover {
       cursor: pointer;
