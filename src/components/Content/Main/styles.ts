@@ -1,7 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MainContainer = styled.section`
   max-width: 100vw;
+  max-height: 40rem;
+  min-height: 40rem;
+  overflow-y: scroll;
+  border-top: 1px solid ${({ theme }) => theme.colors.black};
+
+  &::-webkit-scrollbar {
+    width: 2px;
+    border: 0px solid ${({ theme }) => theme.colors.darkGrey};
+  }
 
   @media (max-width: 1600px) {
     max-width: 75vw;
@@ -12,10 +21,9 @@ export const MainContainer = styled.section`
   }
 
   > section {
-    max-width: 60rem;
-    padding-top: 4rem;
-
-    margin: 0 20rem;
+    max-width: 120rem;
+    padding-top: 2rem;
+    padding-left: 4rem;
 
     @media (max-width: 1400px) {
       margin: 0 5rem;
@@ -28,22 +36,24 @@ export const MainContainer = styled.section`
 
   > table {
     width: 100%;
-
     border: 0;
-
-    padding-top: 3rem;
-
+    padding-top: 1rem;
     text-align: center;
 
-    overflow: scroll;
-
     th {
-      padding: 1rem 2rem;
-      border-top: 1px solid ${({ theme }) => theme.colors.grey};
-      border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
-      /* line-height: 1.5rem; */
+      padding: 1rem 1rem;
+      border-top: 0px solid ${({ theme }) => theme.colors.grey};
+      border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
+      border-left: 0px solid ${({ theme }) => theme.colors.grey};
+      border-right: 0px solid ${({ theme }) => theme.colors.grey};
       font-weight: 700;
-      color: ${({ theme }) => theme.colors.blue};
+      color: ${({ theme }) => theme.colors.yellow};
+      background: linear-gradient(
+        0deg,
+        rgba(15, 18, 25, 1) 6%,
+        rgba(32, 32, 39, 1) 62%,
+        rgba(32, 32, 39, 1) 100%
+      );
     }
 
     td {
@@ -67,7 +77,7 @@ export const Records = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  max-width: 12rem;
+  max-width: 15rem;
   width: 100%;
 
   span {

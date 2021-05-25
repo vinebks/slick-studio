@@ -1,1 +1,1 @@
-export const NAVBAR_LIST = ['Dashboard', 'Analytics', 'Reports', 'Settings'];
+export const NAVBAR_LIST = ["Dashboard", "Analytics"];

@@ -1,16 +1,26 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 export const LogoContainer = styled.section`
   ${({ theme }) => css`
     grid-area: Logo;
+    width: 15rem;
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 0 1.5rem;
+    justify-content: center;
 
-    border-right: 1px solid ${theme.colors.grey};
-    border-left: 1px solid ${theme.colors.grey};
-    border-bottom: 1px solid ${theme.colors.grey};
+    img {
+      filter: brightness(200%);
+      max-width: 7rem;
+      margin-left: 1rem;
+
+      transition: transform 0.2s;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    border-bottom: 2px solid ${theme.colors.grey};
   `}
 `;

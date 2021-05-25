@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContentContainer = styled.main`
   grid-area: Content;
@@ -9,5 +9,5 @@ export const ContentContainer = styled.main`
 export const Border = styled.span`
   width: 100%;
   display: block;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
+  border-bottom: 0px solid ${({ theme }) => theme.colors.grey};
 `;

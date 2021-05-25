@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Slick - Dashboard</title>
+        <title>Ernst & Young - Manager</title>
       </Head>
       <GlobalStyles />
       <Layout>

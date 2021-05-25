@@ -1,36 +1,23 @@
-import { FaUser, FaSquareFull, FaCloudUploadAlt } from 'react-icons/fa';
-import { BsBagFill, BsCameraVideoFill } from 'react-icons/bs';
-import { ImUsers } from 'react-icons/im';
-import { IoIosPaper } from 'react-icons/io';
-import { MdCompareArrows } from 'react-icons/md';
-import { RiDeleteBinFill } from 'react-icons/ri';
+import { FaUser } from "react-icons/fa";
+import { ImUsers } from "react-icons/im";
+import { BsFillXSquareFill } from "react-icons/bs";
+import { BsFillStarFill } from "react-icons/bs";
 
 export const NAVBAR_ICONS = {
-  'My Profile': {
+  "Meu Perfil": {
     icon: <FaUser />,
+    ref: "#",
   },
-  'Account Information': {
-    icon: <BsBagFill />,
-  },
-  'Manage Users': {
+  "Gestao de Usuarios": {
     icon: <ImUsers />,
+    ref: "#",
   },
-  'Manage Customer': {
-    icon: <FaSquareFull />,
+  "Avaliar Usuario": {
+    icon: <BsFillStarFill />,
+    ref: "#",
   },
-  Reports: {
-    icon: <IoIosPaper />,
-  },
-  'Data Sharing': {
-    icon: <MdCompareArrows />,
-  },
-  'Upload Data': {
-    icon: <FaCloudUploadAlt />,
-  },
-  'Delete All Hydrants': {
-    icon: <RiDeleteBinFill />,
-  },
-  'How To Videos': {
-    icon: <BsCameraVideoFill />,
+  "Sair da Plataforma": {
+    icon: <BsFillXSquareFill />,
+    ref: "/login",
   },
 };

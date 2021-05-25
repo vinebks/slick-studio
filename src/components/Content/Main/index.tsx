@@ -37,7 +37,7 @@ export const Main: React.FC = () => {
       <MainContainer>
         <section>
           <Records>
-            <h1>Total Records</h1>
+            <h1>Total de Usuarios</h1>
             {isLoading ? (
               <Skeleton circle height={50} width={50} duration={1} delay={1} />
             ) : (
@@ -45,22 +45,22 @@ export const Main: React.FC = () => {
             )}
           </Records>
           <RawInfo>
-            <span>Download Raw Data</span>
             <input
               type="search"
-              placeholder="It's working"
+              placeholder="Buscar ..."
               onChange={handleChange}
             />
           </RawInfo>
         </section>
-
+          
         <table>
           <thead>
             <tr>
-              <th>User</th>
-              <th>Source</th>
-              <th>Time Stamp</th>
-              <th>Error Flag</th>
+              <th>Id</th>
+              <th>Usuario</th>
+              <th>E-mail</th>
+              <th>Setor</th>
+              <th>Cargo</th>
             </tr>
           </thead>
           <tbody>
@@ -78,14 +78,18 @@ export const Main: React.FC = () => {
                 <td>
                   <Skeleton />
                 </td>
+                <td>
+                  <Skeleton />
+                </td>
               </tr>
             ) : (
               filteredUsers.map((user, key) => (
                 <tr key={key}>
+                  <td>{user.id}</td>
                   <td>{user.name}</td>
-                  <td>{user.source}</td>
-                  <td>{formatDate(user.timeStamp)}</td>
-                  <td>{user.errorFlag}</td>
+                  <td>{user.email}</td>
+                  <td>{user.setor}</td>
+                  <td>{user.cargo}</td>
                 </tr>
               ))
             )}

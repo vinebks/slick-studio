@@ -1,21 +1,25 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
   grid-area: Navbar;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 15rem;
+  padding-right: 2rem;
 
   line-height: 5rem;
 
-  border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
 
   ul {
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 
     li + li {
-      margin-left: 2rem;
+      margin-left: 3rem;
     }
 
     li {
@@ -23,23 +27,23 @@ export const NavbarContainer = styled.nav`
       position: relative;
 
       &.active {
-        color: ${({ theme }) => theme.colors.blue};
+        color: ${({ theme }) => theme.colors.yellow};
       }
 
       &.active::after {
-        content: '';
+        content: "";
         height: 3px;
         border-radius: 3px 3px 0 0;
         width: 100%;
         position: absolute;
         bottom: 1px;
         left: 0;
-        background: ${({ theme }) => theme.colors.blue};
+        background: ${({ theme }) => theme.colors.yellow};
       }
 
       &:hover {
         cursor: pointer;
-        color: ${({ theme }) => theme.colors.blue};
+        color: ${({ theme }) => theme.colors.yellow};
       }
     }
   }
@@ -47,6 +51,7 @@ export const NavbarContainer = styled.nav`
   div {
     display: flex;
     align-items: center;
+    font-weight: bold;
 
     img {
       border-radius: 50%;
