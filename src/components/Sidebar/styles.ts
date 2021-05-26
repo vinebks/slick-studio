@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
   max-height: 60rem;
+  max-width: 15rem;
+  min-width: 20rem;
   display: flex;
   flex-direction: column;
   border-right: 2px solid ${({ theme }) => theme.colors.grey};
 
   div {
-    margin-top: 45rem;
+    margin-top: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

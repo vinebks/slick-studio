@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.section`
-  max-width: 100vw;
+  max-width: 101rem;
   max-height: 40rem;
   min-height: 40rem;
   overflow-y: scroll;

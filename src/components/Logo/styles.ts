@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const LogoContainer = styled.section`
   ${({ theme }) => css`
     grid-area: Logo;
-    width: 15rem;
+    width: 20rem;
 
     display: flex;
     align-items: center;

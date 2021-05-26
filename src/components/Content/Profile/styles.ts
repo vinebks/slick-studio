@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.div`
   min-width: 100vw;
   min-height: 61.2rem;
   display: flex;

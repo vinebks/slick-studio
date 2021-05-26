@@ -6,7 +6,7 @@ export const Container = styled.div`
   grid-template-areas:
     "Logo Navbar"
     "Sidebar Content";
-  grid-template-columns: 15rem 105rem;
+  grid-template-columns: 20fr 100fr;
   grid-template-rows: 5rem 100%;
 
   @media (max-width: 1600px) {

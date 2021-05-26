@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
   grid-area: Navbar;
+  max-width: 101rem;
 
   display: flex;
   justify-content: space-between;

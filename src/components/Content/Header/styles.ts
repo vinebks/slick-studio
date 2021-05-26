@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContentHeader = styled.header`
   > section {
-    max-width: 110rem;
+    max-width: 101rem;
     padding-top: 4rem;
     padding-left: 5rem;
     padding-bottom: 4rem;
