@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { USERS } from "../../../constants/Users";
-import { formatDate } from "../../../utils/formatDate";
 import { MainContainer, Records, RawInfo } from "./styles";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { useTheme } from "styled-components";
-import Link from "next/link";
 
 export const Main: React.FC = () => {
   const [input, setInput] = useState("");

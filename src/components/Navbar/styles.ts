@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.nav`
   grid-area: Navbar;
-  max-width: 101rem;
+  max-width: 100rem;
 
   display: flex;
   justify-content: space-between;
-  padding-left: 15rem;
+  padding-left: 4rem;
   padding-right: 2rem;
 
   line-height: 5rem;
