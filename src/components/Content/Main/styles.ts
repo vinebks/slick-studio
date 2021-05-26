@@ -62,6 +62,11 @@ export const MainContainer = styled.section`
       line-height: 1.5rem;
       font-weight: normal;
 
+      a {
+        color: ${({ theme }) => theme.colors.white};
+        text-decoration: none;
+      }
+
       transition: background 0.2s;
 
       &:hover {

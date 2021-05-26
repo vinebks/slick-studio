@@ -1,4 +1,4 @@
-import { NAVBAR_ICONS } from "../../constants/NavbarIcons";
+import { NAVBAR_ICONS, NAVBAR_EXIT_ICON } from "../../constants/NavbarIcons";
 import { SidebarContainer } from "./styles";
 
 export const Sidebar: React.FC = () => {
@@ -11,6 +11,13 @@ export const Sidebar: React.FC = () => {
           </a>
         ))}
       </nav>
+      <div>
+        {Object.entries(NAVBAR_EXIT_ICON).map(([key, value]) => (
+          <a href={value.ref}>
+            {value.icon} {key}
+          </a>
+        ))}
+      </div>
     </SidebarContainer>
   );
 };

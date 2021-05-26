@@ -1,12 +1,13 @@
-import { useCallback, useEffect, useState } from 'react';
-import { USERS } from '../../../constants/Users';
-import { formatDate } from '../../../utils/formatDate';
-import { MainContainer, Records, RawInfo } from './styles';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import { useTheme } from 'styled-components';
+import { useCallback, useEffect, useState } from "react";
+import { USERS } from "../../../constants/Users";
+import { formatDate } from "../../../utils/formatDate";
+import { MainContainer, Records, RawInfo } from "./styles";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import { useTheme } from "styled-components";
+import Link from "next/link";
 
 export const Main: React.FC = () => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
   const [filteredUsers, setFilteredUsers] = useState(USERS);
   const [isLoading, setIsLoading] = useState(true);
   const { colors } = useTheme();
@@ -14,7 +15,7 @@ export const Main: React.FC = () => {
   const handleChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       setIsLoading((loading) => !loading);
-      if (event.target.value === '') {
+      if (event.target.value === "") {
         setFilteredUsers(USERS);
         setIsLoading((loading) => !loading);
       } else {
@@ -52,7 +53,7 @@ export const Main: React.FC = () => {
             />
           </RawInfo>
         </section>
-          
+
         <table>
           <thead>
             <tr>
@@ -86,7 +87,9 @@ export const Main: React.FC = () => {
               filteredUsers.map((user, key) => (
                 <tr key={key}>
                   <td>{user.id}</td>
-                  <td>{user.name}</td>
+                  <td>
+                    <a href="/userdetails">{user.name}</a>
+                  </td>
                   <td>{user.email}</td>
                   <td>{user.setor}</td>
                   <td>{user.cargo}</td>
