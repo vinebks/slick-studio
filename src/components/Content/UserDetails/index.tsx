@@ -135,10 +135,7 @@ export const UserDetailsPage: React.FC = () => {
                 minWidth: "58rem",
                 marginTop: "3rem",
               }}
-            >
-              <button type="submit">Alterar Senha</button>
-              <button type="submit">Salvar</button>
-            </div>
+            ></div>
           </BodyComponent>
           <BodyComponent>
             <h1 style={{ paddingBottom: "2rem" }}>Dados como Colaborador</h1>
@@ -277,7 +274,7 @@ export const UserDetailsPage: React.FC = () => {
                   minWidth: "6rem",
                 }}
               >
-                <h4>Salario</h4>
+                <h4 style={{ color: "yellow" }}>Salario</h4>
                 <input
                   type="text"
                   placeholder="$ 890,00"
@@ -340,7 +337,7 @@ export const UserDetailsPage: React.FC = () => {
                   minWidth: "6rem",
                 }}
               >
-                <h4>Salario</h4>
+                <h4 style={{ color: "yellow" }}>Salario</h4>
                 <input
                   type="text"
                   placeholder="$ 1.500,00"
@@ -374,7 +371,7 @@ export const UserDetailsPage: React.FC = () => {
             >
               <div
                 style={{
-                  minWidth: "11rem",
+                  minWidth: "10rem",
                 }}
               >
                 <h4>Cargo</h4>
@@ -403,7 +400,7 @@ export const UserDetailsPage: React.FC = () => {
                   minWidth: "6rem",
                 }}
               >
-                <h4>Salario</h4>
+                <h4 style={{ color: "yellow" }}>Salario</h4>
                 <input
                   type="text"
                   placeholder="$ 3.000,00"
@@ -424,6 +421,116 @@ export const UserDetailsPage: React.FC = () => {
                   disabled
                 ></input>
               </div>
+            </div>
+            {/* ------------------------------------ */}
+          </BodyComponent>
+          <BodyComponent>
+            <h1 style={{ paddingBottom: "2rem" }}>Validacao de Mercado</h1>
+
+            {/* ------------------------------------ */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                minWidth: "10rem",
+              }}
+            >
+              <div
+                style={{
+                  minWidth: "18rem",
+                }}
+              >
+                <h4>Cargo</h4>
+                <input
+                  type="text"
+                  placeholder="Programador Front-End"
+                  style={{ width: "17rem" }}
+                  disabled
+                ></input>
+              </div>
+              <div
+                style={{
+                  minWidth: "12rem",
+                }}
+              >
+                <h4 style={{ color: "yellow" }}>Salario na EY</h4>
+                <input
+                  type="text"
+                  placeholder="$ 3.000,00"
+                  style={{ width: "9rem" }}
+                  disabled
+                ></input>
+              </div>
+              <div
+                style={{
+                  minWidth: "13rem",
+                }}
+              >
+                <h4>Salario do Mercado</h4>
+                <input
+                  type="text"
+                  placeholder="$ 2.500,00"
+                  style={{ width: "10rem" }}
+                  disabled
+                ></input>
+              </div>
+              <div
+                style={{
+                  minWidth: "6rem",
+                }}
+              >
+                <h4>Status</h4>
+                <input
+                  type="text"
+                  placeholder="Acima do Mercado"
+                  style={{
+                    width: "14rem",
+                  }}
+                  disabled
+                ></input>
+              </div>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                minWidth: "10rem",
+              }}
+            >
+              <div
+                style={{
+                  minWidth: "18rem",
+                }}
+              >
+                <h4>Aumento Salarial</h4>
+                <input
+                  type="text"
+                  placeholder="Valor da Alteracao"
+                  style={{ width: "14rem", color: "white" }}
+                ></input>
+              </div>
+            </div>
+            <div
+              style={{
+                minWidth: "6rem",
+              }}
+            >
+              <button
+                type="submit"
+                value="comentarios"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "20rem",
+                }}
+              >
+                Propor Alteracao
+              </button>
             </div>
           </BodyComponent>
           <BodyComponent>
@@ -616,6 +723,75 @@ export const UserDetailsPage: React.FC = () => {
                   disabled
                 ></input>
               </div>
+            </div>
+          </BodyComponent>
+          <BodyComponent>
+            <h1 style={{ paddingBottom: "2rem" }}>Comentarios de Gestores</h1>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                minWidth: "10rem",
+              }}
+            >
+              <div
+                style={{
+                  minWidth: "15rem",
+                }}
+              >
+                <h4>Gestor Responsavel</h4>
+                <input
+                  type="text"
+                  placeholder="Rafael Dantas"
+                  style={{ width: "12rem" }}
+                  disabled
+                ></input>
+              </div>
+              <div
+                style={{
+                  minWidth: "15rem",
+                }}
+              >
+                <h4>Data</h4>
+                <input
+                  type="text"
+                  placeholder="10/03/2021"
+                  style={{ width: "10rem" }}
+                  disabled
+                ></input>
+              </div>
+              <div
+                style={{
+                  minWidth: "6rem",
+                }}
+              >
+                <h4>Comentario :</h4>
+                <h6 style={{ width: "23rem", height: "2rem" }}>
+                  O profissional desempenha bem o trabalho em equipe, e tem um
+                  desenvolvimento rapido dentro das necessidades da equipe
+                </h6>
+              </div>
+            </div>
+            <div
+              style={{
+                minWidth: "6rem",
+              }}
+            >
+              <button
+                type="submit"
+                value="comentarios"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "20rem",
+                }}
+              >
+                Adicionar Comentario
+              </button>
             </div>
           </BodyComponent>
         </UserProfileComponent>

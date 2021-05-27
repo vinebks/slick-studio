@@ -56,8 +56,8 @@ export const Main: React.FC = () => {
           <thead>
             <tr>
               <th>Id</th>
-              <th>Usuario</th>
-              <th>E-mail</th>
+              <th>Colaborador</th>
+              <th>Salario Atual</th>
               <th>Setor</th>
               <th>Cargo</th>
             </tr>

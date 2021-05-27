@@ -7,7 +7,7 @@ export const NAVBAR_ICONS = {
     icon: <FaUser />,
     ref: "/profile",
   },
-  "Gestao de Usuarios": {
+  "Gestao de Colaboradores": {
     icon: <ImUsers />,
     ref: "/",
   },
