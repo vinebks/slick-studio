@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  min-width: 100vw;
+  min-width: 99vw;
   min-height: 61.2rem;
   display: flex;
   justify-content: center;

@@ -9,7 +9,7 @@ export const SidebarContainer = styled.div`
   border-right: 2px solid ${({ theme }) => theme.colors.grey};
 
   div {
-    margin-top: 40rem;
+    margin-top: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

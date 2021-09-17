@@ -1,10 +1,10 @@
 import { NavbarContainer } from "./styles";
 import { useCallback, useState } from "react";
-import { NAVBAR_LIST } from "../../constants/NavbarList";
+import { NAVBAR_ITEMS } from "../../constants/NavbarList";
 import Link from "next/link";
 
 export const Navbar: React.FC = () => {
-  const [active, setActive] = useState("Dashboard");
+  const [active, setActive] = useState(NAVBAR_ITEMS[0].id);
 
   const handleActive = useCallback((item: string) => {
     setActive(item);
@@ -13,12 +13,19 @@ export const Navbar: React.FC = () => {
   return (
     <NavbarContainer>
       <ul>
-        {NAVBAR_LIST.map((item) => (
+        {NAVBAR_ITEMS.map((item) => (
           <li
-            onClick={() => handleActive(item)}
-            className={active === item ? "active" : ""}
+            onClick={() => {
+              handleActive(item.id);
+            }}
+            className={active === item.id ? "active" : ""}
           >
-            {item}
+            <a
+              style={{ color: "white", textDecoration: "none" }}
+              href={item.url}
+            >
+              {item.id}
+            </a>
           </li>
         ))}
       </ul>
